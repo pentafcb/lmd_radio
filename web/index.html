@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Radio Policía</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+<body>
+    <div class="radio-container" style="display: none;">
+        <div class="radio-header">
+            <h1 class="boogaloo-regular">
+                <lord-icon
+                    src="https://cdn.lordicon.com/pmivedvy.json"
+                    trigger="loop"
+                    colors="primary:#ffffff,secondary:#104891"
+                    style="width:60px;height:60px;vertical-align:middle;">
+                </lord-icon>
+                RADIO POLICIAL
+            </h1>
+            <div class="power-off-card">
+                <div class="power-off-glow"></div>
+                <img src="./images/power-on.png" alt="Salir">
+            </div>
+        </div>
+        <div class="radio-search">
+            <input type="text" placeholder="Buscar frecuencia..." id="search-box">
+        </div>
+        <div class="radio-ui">
+            <h2>Mis Frecuencias</h2>
+            <div id="frequencies-container" class="frequencies"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
