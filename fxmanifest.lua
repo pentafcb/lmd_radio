@@ -1,7 +1,7 @@
 fx_version "cerulean"
 game "gta5"
 author 'LMD Group'
-description 'Garage System https://lmdgroup.tebex.io'
+description 'Police Radio System https://lmdgroup.tebex.io'
 lua54 'on'
 shared_scripts {
     '@ox_lib/init.lua',
