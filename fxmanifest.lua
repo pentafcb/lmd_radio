@@ -1,42 +1,19 @@
-fx_version 'cerulean'
-game 'gta5'
-lua54 'yes'
+fx_version "cerulean"
+game "gta5"
 author 'LMD Group'
-description 'Garage System'
-version '1.0.0'
-escrow_ignore {
-    'custom/cl_edit.lua',
-    'custom/sv_edit.lua',
-    'locales/*.json',
-    'config.lua',
-    'readme.txt',
-}
+description 'Garage System https://lmdgroup.tebex.io'
+lua54 'on'
 shared_scripts {
     '@ox_lib/init.lua',
-    'init.lua',
-    'config.lua'
+    '@es_extended/imports.lua'
 }
-client_scripts {
-    'cl_utils.lua',
-    'custom/cl_edit.lua',
-    'client.lua'
-}
-server_scripts {
-    '@oxmysql/lib/MySQL.lua',
-    'sv_utils.lua',
-    'custom/sv_edit.lua',
-    'server.lua'
-}
+client_script 'client.lua'
+server_script 'server.lua'
 ui_page 'web/index.html'
 files {
     'web/index.html',
-    'web/style.css',
-    'web/app.js',
-    'web/*.png',
-    'web/locales/*.js',
-    'locales/*.json'
-}
-dependencies {
-    'oxmysql',
-    'ox_lib',
+    'web/styles.css',
+    'web/script.js',
+    'web/images/*.png',
+    'web/*.mp3',
 }
